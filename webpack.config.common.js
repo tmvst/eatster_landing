@@ -21,7 +21,7 @@ module.exports = {
   node: {
     fs: 'empty',
   },
-  entry: ['./src/js/app.js', './src/style/main.scss'],
+  entry: ['./src/js/main.js', './src/style/style.scss'],
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'app.bundle.js',
@@ -44,8 +44,14 @@ module.exports = {
           {
             loader: MiniCssExtractPlugin.loader,
           },
-          'css-loader', 'postcss-loader', 'sass-loader',
+          'css-loader',
+          'postcss-loader',
+          'sass-loader',
         ],
+      },
+      {
+        test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)|\.jpg($|\?)/,
+        use: 'file-loader',
       },
       {
         test: /\.html$/,
@@ -60,10 +66,32 @@ module.exports = {
       filename: '[name].css',
       chunkFilename: '[id].css',
     }),
-    new CopyWebpackPlugin([{
-      from: './src/static/',
-      to: './static/',
-    }]),
+    new CopyWebpackPlugin([
+      {
+        from: './src/images/',
+        to: './images/',
+      },
+      {
+        from: './src/site.webmanifest',
+        to: './',
+      },
+      {
+        from: './src/safari-pinned-tab.svg',
+        to: './',
+      },
+      {
+        from: './src/favicon.ico',
+        to: './',
+      },
+      {
+        from: './src/favicon-16x16.png',
+        to: './',
+      },
+      {
+        from: './src/favicon-32x32.png',
+        to: './',
+      },
+    ]),
     ...generateHTMLPlugins(),
   ],
   stats: {

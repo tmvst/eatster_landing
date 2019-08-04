@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="567px" height="704px" viewBox="0 0 567 704" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>hero-bg</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#34F875" offset="0%"></stop>
+            <stop stop-color="#34F875" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="32.541%" cy="46.352%" fx="32.541%" fy="46.352%" r="60.823%" id="radialGradient-2">
+            <stop stop-color="#34F875" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#34F875" stop-opacity="0.64" offset="51.1111698%"></stop>
+            <stop stop-color="#34F875" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="hero-bg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iphone-hero-bg" fill-rule="nonzero">
+            <path d="M199,609 C242.352,881.817 700.617,484.521 398,410 C95.383,335.479 308.905,211 199,211 C89.095,211 0,300.095 0,410 C0,519.905 155.648,336.183 199,609 Z" id="Path" fill="url(#linearGradient-1)"></path>
+            <circle id="Oval" fill="url(#radialGradient-2)" cx="395" cy="172" r="172"></circle>
+        </g>
+    </g>
+</svg>
