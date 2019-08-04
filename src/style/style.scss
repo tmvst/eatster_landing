@@ -1,10 +1,7 @@
 /*--------------------------------------------------------------
 # Variables, functions and mixins
 --------------------------------------------------------------*/
-@import "abstracts/variables",
-        "abstracts/functions",
-        "abstracts/mixins",
-        'abstracts/include-media';
+@import "abstracts/variables", "abstracts/functions", "abstracts/mixins", "abstracts/include-media";
 
 /*--------------------------------------------------------------
 1.0 Normalize
@@ -47,6 +44,11 @@
 # Mockup
 --------------------------------------------------------------*/
 @import "layout/mockups";
+
+/*--------------------------------------------------------------
+# Features
+--------------------------------------------------------------*/
+@import "layout/features";
 
 /*--------------------------------------------------------------
 # Features extended
