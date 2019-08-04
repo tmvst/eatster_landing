@@ -1,6 +1,14 @@
 .mockup-container {
   position: relative;
   margin-right: 2rem;
+  max-width: 100%;
+  margin-left: auto;
+}
+
+@include media(">medium") {
+  .mockup-container {
+    max-width: 33%;
+  }
 }
 
 .mockup-bg {

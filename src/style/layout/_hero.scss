@@ -30,6 +30,7 @@
   position: relative;
   z-index: 1;
   display: flex;
+  flex-direction: column;
 }
 
 .hero-copy {
@@ -37,14 +38,22 @@
   margin-bottom: 48px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding-top: 5rem;
-  padding-right: 2rem;
+  justify-content: center;
+  text-align: center;
+  padding-top: 2rem;
 
   .hero-paragraph {
     color: color(typography, 1i);
     margin-bottom: 0.5rem;
   }
+}
+
+.header-logo-image {
+  display: inline-block;
+}
+
+.hero-cta img {
+  display: inline-block;
 }
 
 @include media(">medium") {
@@ -66,6 +75,21 @@
     &::after {
       height: 347px;
       background-size: 1440px 347px;
+    }
+
+    .hero-inner {
+      flex-direction: row;
+    }
+
+    .hero-copy {
+      justify-content: flex-start;
+      text-align: left;
+      padding-top: 5rem;
+      padding-right: 2rem;
+    }
+
+    .hero-cta img {
+      margin-left: -16px;
     }
   }
 }

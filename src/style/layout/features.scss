@@ -47,6 +47,7 @@
   justify-content: center;
   background: color(bg, 1);
   border-radius: 50%;
+  padding-top: 14px;
 
   &::before {
     content: "";
@@ -61,7 +62,7 @@
 }
 
 .feature-title {
-  margin-top: 20px;
+  margin-top: 32px;
 }
 
 @include media(">medium") {
@@ -87,6 +88,6 @@
   }
 
   .feature-title {
-    margin-top: 16px;
+    margin-top: 32px;
   }
 }
