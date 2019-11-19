@@ -30,9 +30,9 @@
     function detectAndServe() {
       let os = getMobileOperatingSystem();
       if (os == "Android") {
-        window.location.href = "https://play.google.com/store/apps/details?id=com.eliapps.eatsters";
+        window.location.replace("https://play.google.com/store/apps/details?id=com.eliapps.eatsters");
       } else if (os == "iOS") {
-        window.location.href = "https://www.itunes.com";
+        window.location.replace("https://www.itunes.com");
       } else {
         return;
       }
