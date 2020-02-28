@@ -5,6 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Stiahni Eatster</title>
+
+    <script>
+      !(function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "250212045971416");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display:none"
+        src="https://www.facebook.com/tr?id=250212045971416&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
   </head>
   <script>
     function getMobileOperatingSystem() {
@@ -30,9 +66,13 @@
     function detectAndServe() {
       let os = getMobileOperatingSystem();
       if (os == "Android") {
-        window.location.replace("https://play.google.com/store/apps/details?id=com.eliapps.eatsters");
+        window.location.replace(
+          "https://play.google.com/store/apps/details?id=com.eliapps.eatsters"
+        );
       } else if (os == "iOS") {
-        window.location.replace("https://apps.apple.com/sk/app/eatster-eat-faster/id1488301424");
+        window.location.replace(
+          "https://apps.apple.com/sk/app/eatster-eat-faster/id1488301424"
+        );
       } else {
         return;
       }
@@ -44,17 +84,28 @@
         <section class="section text-center">
           <div class="container">
             <h1 class="feature-title">Stiahni Eatster a&nbsp;nestoj v rade</h1>
-            <a href="https://play.google.com/store/apps/details?id=com.eliapps.eatsters" target="_blank" rel="nofollow"
+            <a
+              href="https://play.google.com/store/apps/details?id=com.eliapps.eatsters"
+              target="_blank"
+              rel="nofollow"
               ><img
                 alt="Teraz na Google Play"
                 src="https://play.google.com/intl/en_us/badges/images/generic/sk_badge_web_generic.png"
                 style="height: 100px; margin: 0 auto;"
             /></a>
-            <a href="https://apps.apple.com/sk/app/eatster-eat-faster/id1488301424">
-              <img src="images/appstore.svg" alt="Stiahnuť na App Store" style="height: 75px; margin: 1rem auto;" />
-						</a>
+            <a
+              href="https://apps.apple.com/sk/app/eatster-eat-faster/id1488301424"
+            >
+              <img
+                src="images/appstore.svg"
+                alt="Stiahnuť na App Store"
+                style="height: 75px; margin: 1rem auto;"
+              />
+            </a>
 
-						<p style="margin-top: 2rem;"><div class="footer-copyright">&copy; 2019 Eatster, všetky práva vyhradené</div></p>
+            <div style="margin-top: 2rem;" class="footer-copyright">
+              &copy; 2020 Eatster, všetky práva vyhradené
+            </div>
           </div>
         </section>
       </main>
