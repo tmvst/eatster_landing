@@ -19,7 +19,7 @@
       "src": "/covid",
       "status": 301,
       "headers": { "Location": "https://forms.gle/R2nxshHRUd2pwppc6" }
-    }
+    },
     {
       "src": "/2020",
       "status": 301,
